@@ -33,7 +33,7 @@ In the second sample, no one can pass level 4.
 
 #### Links
 
-Original source - <http://codeforces.com/problemset/problem/978/B>
+Original source - <http://codeforces.com/problemset/problem/469/A>
 
 Find me - <http://mahmudx.azurewebsites.net/>
 
