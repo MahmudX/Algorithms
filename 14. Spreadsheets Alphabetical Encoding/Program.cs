@@ -14,17 +14,16 @@ namespace Spreadsheets_Alphabetical_Encoding
             Console.WriteLine(string.Join(", ", s));
         }
         static string GetColumn(int n)
-{
-    string result = "";
+        {
+            string result = "";
 
-    while (n > 0)
-    {
-        int rem = (n - 1) % 26;
-        result = char(rem + 'A') + result;
-        n = (n - 1) / 26;
-    }
-
-    return result;
-}
+            while (n > 0)
+            {
+                int rem = (n - 1) % 26;
+                result = (char)(rem + 'A') + result;
+                n = (n - 1) / 26;
+            }
+            return result;
+        }
     }
 }
