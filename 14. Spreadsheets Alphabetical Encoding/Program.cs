@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 namespace Spreadsheets_Alphabetical_Encoding
 {
@@ -9,29 +9,22 @@ namespace Spreadsheets_Alphabetical_Encoding
             List<string> s = new List<string>();
             for (int i = 1; i < 137; i++)
             {
-                s.Add(GetString(i));
+                s.Add(GetColumn(i));
             }
             Console.WriteLine(string.Join(", ", s));
         }
-        static string GetString(int n)
-        {
-            string result = "";
-            while (n > 26)
-            {
-                int temp = n / 26, rem = n % 26;
-                if (rem == 0)
-                    result += GetChar((n - 1) / 26) + "Z";
-                else
-                    result += GetChar(temp);
-                n = rem;
-            }
-            if (n != 0)
-                result += GetChar(n);
-            return result;
-        }
-        static char GetChar(int n)
-        {
-            return (char)(64 + n);
-        }
+        static string GetColumn(int n)
+{
+    string result = "";
+
+    while (n > 0)
+    {
+        int rem = (n - 1) % 26;
+        result = char(rem + 'A') + result;
+        n = (n - 1) / 26;
+    }
+
+    return result;
+}
     }
 }
