@@ -1,0 +1,5 @@
+Number = int(input())
+Day = int(input())
+Salary = float(input())
+print("NUMBER =", Number)
+print("SALARY = U$ %.2f" % (Day * Salary))
