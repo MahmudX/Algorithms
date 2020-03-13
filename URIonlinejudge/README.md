@@ -1,7 +1,6 @@
 # URIOnlineJudge
 
 Solution of all problem I've solved on [this](https://www.urionlinejudge.com.br) platform
-http://www.google.com 
 
 | PROBLEM | PROBLEM NAME              | RANKING | SUBMISSION | LANGUAGE | RUNTIME |
 |---------|---------------------------|---------|------------|----------|---------|
