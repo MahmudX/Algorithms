@@ -1,35 +1,24 @@
 #include <iostream>
 using namespace std;
 
-char GetChar(int n)
-{
-    return (char)(64 + n);
-}
-
-string GetString(int n)
+string GetColumn(int n)
 {
     string result = "";
-    while (n > 26)
+
+    while (n > 0)
     {
-        int temp = n / 26, rem = n % 26;
-        if (rem == 0)
-        {
-            result += GetChar((n - 1) / 26);
-            result += "Z";
-        }
-        else
-            result += GetChar(temp);
-        n = rem;
+        int rem = (n - 1) % 26;
+        result = char(rem + 'A') + result;
+        n = (n - 1) / 26;
     }
-    if (n != 0)
-        result += GetChar(n);
+
     return result;
 }
 
 int main()
 {
-    for (int i = 1; i < 137; i++)
+    for (int i = 1; i < 1000; i++)
     {
-        cout << GetString(i) << endl;
+        cout << GetColumn(i) << ", ";
     }
 }
