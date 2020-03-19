@@ -4,6 +4,10 @@ Most optimal and accurate algorithm for finding the greatest common divisor betw
 
 Read more about Euclidean algorithm on [Wikipedia][1].
 
+# LCM
+
+An optimal solution for calculating the Least Common Multiple.
+
 Find me - <https://mahmudx.azurewebsites.net>
 
 Also here - <http://mahmudnotes.com/>
